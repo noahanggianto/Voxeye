@@ -94,3 +94,32 @@ Click **Caregiver** to open it in a second tab. Keep both tabs in the **same bro
 
 ### 5. Settings
 The settings are located at the top-right of the website. 
+
+<details>
+<summary>npm warns about install scripts and esbuild</summary>
+
+This is a warning, not an error. Try `npm run dev` first. If you get an esbuild error, run:
+
+```sh
+npm install-scripts approve esbuild
+npm install
+```
+
+</details>
+
+<details>
+<summary>Clean reinstall</summary>
+
+**Windows (PowerShell)**
+```powershell
+Remove-Item -Recurse -Force node_modules
+npm install
+npm run dev
+```
+
+**macOS / Linux**
+```sh
+rm -rf node_modules
+npm install
+npm run dev
+```
