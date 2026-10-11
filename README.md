@@ -28,3 +28,48 @@ winget install OpenJS.NodeJS
 ```
 
 Then **close and reopen your terminal** so it picks up the new install, and confirm with `node -v`.
+
+### 2. Install dependencies
+
+From the project folder (the one containing `package.json`):
+
+```sh
+npm install
+```
+
+### 3. Set up the Gemini API key (optional but recommended)
+
+Voxeye uses the Gemini API to suggest full sentences from what you blink. This step is optional: without a key, Voxeye falls back to a small local phrase matcher, which still works for a demo.
+
+**a) Get a key**
+
+1. Go to [Google AI Studio](https://aistudio.google.com/) and sign in with a Google account.
+2. Click **Get API key** and create a new key. It's a long string, usually starting with `AIza`.
+
+**b) Create your `.env` file**
+
+The repo includes a template called `.env.example`. Copy it to a new file named `.env`:
+
+**macOS / Linux**
+```sh
+cp .env.example .env
+```
+
+**Windows (PowerShell)**
+```powershell
+Copy-Item .env.example .env
+```
+
+**c) Add your key**
+
+Open `.env` in a text editor. You'll see a placeholder line:
+
+```
+GEMINI_API_KEY=your_key_here
+```
+
+Replace `your_key_here` with your real key. No quotes, no spaces around the `=`:
+
+```
+GEMINI_API_KEY=AIzaSyYourRealKeyGoesHere
+```
