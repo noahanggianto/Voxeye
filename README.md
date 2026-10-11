@@ -123,3 +123,13 @@ rm -rf node_modules
 npm install
 npm run dev
 ```
+### 6. Roadmap
+Tremor and blink-rate dashboard
+Adaptive threshold learning
+Smart-home and SMS alerts
+Multilingual speech output
+QR Code that allows caretaker to look at the alert on their mobile devices
+
+Notes
+
+Recognition depends on camera position, lighting, model availability, and browser speech support.
