@@ -73,3 +73,24 @@ Replace `your_key_here` with your real key. No quotes, no spaces around the `=`:
 ```
 GEMINI_API_KEY=AIzaSyYourRealKeyGoesHere
 ```
+### 4. Start the app
+
+```sh
+npm run dev
+```
+
+If you add or change the key while the app is running, stop it with `Ctrl+C` and run `npm run dev` again.
+
+### 5. Open it in your browser
+
+Go to **http://127.0.0.1:4173/** (Chrome or Edge recommended) and click **Allow** when asked for camera access.
+
+> [!TIP]
+> No camera, or the vision model won't load? Click **Try demo** or type directly in the message field.
+
+### 6. Open the caregiver screen
+
+Click **Caregiver** to open it in a second tab. Keep both tabs in the **same browser**, since they share messages through `BroadcastChannel`.
+
+### 5. Settings
+The settings are located at the top-right of the website. 
